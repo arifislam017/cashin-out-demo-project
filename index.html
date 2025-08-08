@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Add-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-        <h1>Hello</h1>
+
+<body class="w-screen flex justify-center items-center">
+    <main class=" flex flex-col items-center m-2 border w-88">
+        <!-- Main Balance -->
+        <div>
+            <div class="stats shadow top-8 bg-orange-200">
+                <div class="stat items-center flex flex-col">
+                    <div class="stat-title font-bold text-xl">Current Wallet</div>
+                    <div id="mainBalanceId" class="stat-value">8400</div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Balance -->
+
+        <!-- Button Start -->
+        <div class="mt-12">
+            <button id="sendMoneyButton" class="btn">Send Money </button>
+            <button id="cashOutButton" class="btn">Cash Out </button>
+            <button id="transactionButton" class="btn">Transaction </button>
+        </div>
+        <!-- Button End -->
+        <!-- Form Start -->
+        <!-- Send Money Start -->
+        <div class="hero bg-base-200">
+            <div class="card  w-full shadow-2xl">
+                <div id="sendMoneySection" class="card-body ">
+                    <fieldset class="fieldset text-sm">
+                        <label class="label">Send Money</label>
+                        <input id="sendMoneyId" type="text" class="input" placeholder="Enter Send Money" required
+                            autocomplete="off" />
+                        <label class="label">Password</label>
+                        <input id="sendMoneyPassId" type="password" class="input" placeholder="Password" />
+                        <button id="sendMoney" class="btn btn-neutral mt-4">Send Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <!-- Send Money End -->
+        <!-- Send Cash Out Start -->
+        <div class="hero bg-base-200">
+            <div class="card  w-full shadow-2xl">
+                <div id="cashOutSection" class="card-body hidden">
+                    <fieldset class="fieldset text-sm">
+                        <label class="label">Cash Out Money</label>
+                        <input id="CashOutMoneyId" type="text" class="input" placeholder="Enter Cash Out Money" required
+                            autocomplete="off" />
+                        <label class="label">Password</label>
+                        <input id="cashOutMoneyPassId" type="password" class="input" placeholder="Password" />
+                        <button id="cashOutMoney" class="btn btn-neutral mt-4">Cash Out</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <!-- Send Cash Out -->
+        <!-- Form Start -->
+        <!-- Transaction Start -->
+        <div id="transactionId" class="h-auto hidden">
+            <h1 class="text-xl font-bold">Transaction History</h1>
+
+        </div>
+        <!-- Transaction End -->
+
+        <!-- Modal Start -->
+
+        <!-- You can open the modal using ID.showModal() method -->
+        
+        <dialog id="my_modal_3" class="modal">
+            <div class="modal-box">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <div id="infoOfSendMoney">
+
+                </div>
+            </div>
+        </dialog>
+
+        <!-- Modal End -->
+
+
+    </main>
+    <script src="send-money.js"></script>
+    <script src="uitility.js"></script>
+    <script src="toggle.js"></script>
 </body>
+
 </html>

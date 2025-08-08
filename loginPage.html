@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Add-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="w-screen flex justify-center items-center">
+    <main class=" flex flex-col items-center m-2 border w-88">
+        <!-- Main Balance -->
+        <div>
+            <div class="stats shadow top-8 bg-green-200">
+                <div class="stat items-center flex flex-col">
+                    <div class="stat-title font-bold text-xl">Log In Here</div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Balance -->
+
+        <!-- Button Start -->
+        <div class="mt-12">
+            <h1 class="text-black font-bold  text-xl ">Don't Share Your <br> Password Any Where</h1>
+        </div>
+        <!-- Button End -->
+        <!-- Form Start -->
+
+        <div class="hero bg-base-200">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label">Email Or Number</label>
+                            <input id="inputAmount" type="text" class="input" placeholder="Email Or Number" />
+                            <label class="label">Password</label>
+                            <input id="passwordID" type="password" class="input" placeholder="Password" />
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="loginBtn" class="btn btn-neutral mt-4">Login</button>
+                        </fieldset>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Form Start -->
+    </main>
+    <script src="loginSetup.js"></script>
+    <script src="uitility.js"></script>
+</body>
+
+</html>
