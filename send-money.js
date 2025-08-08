@@ -17,7 +17,7 @@ document.getElementById("sendMoney").addEventListener('click', function (even) {
         document.getElementById("infoOfSendMoney").innerText = "Transaction Successful!";
         document.getElementById("infoOfSendMoney").innerText = `You sent ${getSendMoney}Tk. Remaining balance: ${updateMoney}Tk.`;
 
-
+        // Modal Here
         document.getElementById('sendMoneyId').value = "";
         document.getElementById('sendMoneyPassId').value = "";
 
@@ -48,6 +48,7 @@ document.getElementById('cashOutMoney').addEventListener('click', function (even
         // console.log(money);
         document.getElementById('mainBalanceId').innerText = updateCashMoney;
 
+        // Modal Here
         document.getElementById("my_modal_3").showModal();
         document.getElementById("infoOfSendMoney").innerText = "Transaction Successful!";
         document.getElementById("infoOfSendMoney").innerText = `You sent ${getCashMoney}Tk. Remaining balance: ${updateCashMoney}Tk.`;
